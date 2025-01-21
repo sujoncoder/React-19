@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 const MealItem = ({ name, isPacked }) => {
     return (
@@ -6,5 +7,10 @@ const MealItem = ({ name, isPacked }) => {
         </div>
     )
 }
+
+MealItem.PropTypes = {
+    name: PropTypes.string.isRequired,
+    isPacked: PropTypes.bool.isRequired
+};
 
 export default MealItem;
