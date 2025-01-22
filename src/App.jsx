@@ -5,13 +5,15 @@
 // import ToolBar from "./components/toolbar/ToolBar";
 // import Counter from "./components/counter/Counter";
 
-import Form from "./components/form/Form";
+import Color from "./components/color/Color";
+
+// import Form from "./components/form/Form";
 
 
 const App = () => {
   return (
     <div className="bg-slate-100">
-      <Form />
+      <Color />
     </div>
   )
 }
