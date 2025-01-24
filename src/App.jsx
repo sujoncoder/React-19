@@ -6,14 +6,15 @@
 // import Counter from "./components/counter/Counter";
 // import Color from "./components/color/Color";
 // import Form from "./components/form/Form";
-import Accordian from "./components/accordian/Accordian";
+// import Accordian from "./components/accordian/Accordian";
+import Todo from "./components/todo/Todo";
 
 
 
 const App = () => {
   return (
     <div className="bg-slate-100">
-      <Accordian />
+      <Todo />
     </div>
   )
 }
