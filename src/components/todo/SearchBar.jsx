@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 
 
-const SearchBar = ({ text, onHandleOnChange, onHandleClick }) => {
+const SearchBar = ({ text, onHandleOnChange, onHandleAddToDo }) => {
     return (
         <>
             <div className='flex justify-evenly items-center mt-10'>
@@ -13,13 +13,13 @@ const SearchBar = ({ text, onHandleOnChange, onHandleClick }) => {
                 />
 
                 <button
-                    onClick={onHandleClick}
+                    onClick={onHandleAddToDo}
                     className='px-4 py-1.5 rounded bg-blue-500 text-white active:bg-blue-600'>
                     Add
                 </button>
             </div>
 
-            <h2 className="text-slate-500 pl-10 my-4">Your text : {text}</h2>
+            <h2 className="text-slate-500 pl-10 my-4">Your text : {text} </h2>
         </>
     )
 }
@@ -27,7 +27,7 @@ const SearchBar = ({ text, onHandleOnChange, onHandleClick }) => {
 SearchBar.propTypes = {
     text: PropTypes.string,
     onHandleOnChange: PropTypes.func,
-    onHandleClick: PropTypes.func
+    onHandleAddToDo: PropTypes.func
 }
 
 export default SearchBar

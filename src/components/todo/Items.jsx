@@ -1,13 +1,17 @@
-import Item from "./Item";
 import PropTypes from "prop-types";
+import Item from "./Item";
 
 
-const Items = ({ todoItems }) => {
+const Items = ({ todoItems, onDeleteTodo }) => {
+
+
     return (
         <div className="mt-5 px-5">
             {
-                todoItems.map((i, index) => (
-                    <Item key={index} item={i} />
+                todoItems.map((ti) => (
+                    <ul key={ti.id} className="pr-5">
+                        <Item item={ti} onDeleteTodo={onDeleteTodo} />
+                    </ul>
                 ))
             }
         </div>
@@ -15,7 +19,8 @@ const Items = ({ todoItems }) => {
 }
 
 Items.propTypes = {
-    todoItems: PropTypes.array
-};
+    todoItems: PropTypes.array,
+    onDeleteTodo: PropTypes.func
+}
 
 export default Items
