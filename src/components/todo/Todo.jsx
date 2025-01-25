@@ -4,6 +4,9 @@ import Items from './Items'
 import SearchBar from './SearchBar'
 
 
+// ID GENERATOR
+let nextId = 4;
+
 const Todo = () => {
     const [text, setText] = useState("");
     const [todoItems, setTodoItems] = useState([
@@ -21,8 +24,6 @@ const Todo = () => {
         }
     ]);
 
-    // ID GENERATE
-    let nextId = 4;
 
     // HANDLE ONCHANGE EVENT
     const handleOnChange = (e) => {
@@ -36,10 +37,11 @@ const Todo = () => {
             setTodoItems([
                 ...todoItems,
                 {
-                    id: nextId++,
+                    id: nextId,
                     title: text
                 }
             ])
+            nextId++
             setText("")
         } else {
             alert("Write a valid todo not empty...")
