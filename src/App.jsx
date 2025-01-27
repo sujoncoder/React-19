@@ -7,7 +7,7 @@
 // import Color from "./components/color/Color";
 // import Form from "./components/form/Form";
 // import Accordian from "./components/accordian/Accordian";
-import Todo from "./components/todo/Todo";
+import Todo from "./components/todo-state/Todo";
 
 
 
