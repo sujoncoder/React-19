@@ -1,15 +1,21 @@
 import PropTypes from "prop-types"
-import { Trash2 } from 'lucide-react';
-import { PenLine } from 'lucide-react';
 
 
-const Item = ({ item, onDeleteTodo }) => {
+
+
+const Item = ({ item, onEditItem, onDeleteTodo }) => {
     return (
         <li className="flex justify-between items-center list-none py-1 text-lg">
             {item.title}
 
             <div className="flex items-center space-x-2">
-                <PenLine className="text-yellow-600 cursor-pointer"
+                <PenLine
+                    onClick={() => onEditItem(item.id)}
+                    className="text-yellow-600 cursor-pointer"
+                />
+
+                <Save
+                    className="text-green-500 cursor-pointer"
                 />
 
                 <Trash2
@@ -23,8 +29,9 @@ const Item = ({ item, onDeleteTodo }) => {
 }
 
 Item.propTypes = {
-    item: PropTypes.obj,
-    onDeleteTodo: PropTypes.func
+    item: PropTypes.any,
+    onDeleteTodo: PropTypes.func,
+    onEditItem: PropTypes.func
 }
 
 
