@@ -7,14 +7,17 @@ const RefBtn = () => {
     const ref = useRef(0);
 
     const handleBtn = () => {
-        alert(ref.current = ref.current + 1)
+
     };
+    ref.current.scrollIntoView();
 
 
     return (
         <div>
             <Container>
-                <h1>{ref.current}</h1>
+                <div ref={ref}>
+                    hello world
+                </div>
                 <button
                     onClick={handleBtn}
                     className="bg-blue-500 px-4 py-2 rounded text-white font-semibold">Hello</button>
