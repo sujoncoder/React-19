@@ -1,9 +1,12 @@
 import { useState } from "react";
 
+console.log("Rendering from the TOP 👨‍💻.")
+
+
 const Counter = () => {
 
     const [counter, setCounter] = useState(0);
-    console.log(counter !== 0 ? `Rendering from top : ${counter}` : "Rendering from top : 0")
+    console.log(counter !== 0 ? `Rendering from top in the component : ${counter}` : "Rendering from top in the component : 0")
 
 
     const increment = () => {
@@ -17,7 +20,7 @@ const Counter = () => {
         console.log("Rendering from the function - ", counter)
     };
 
-    console.log("Rendering from Footer :", counter)
+    console.log("Rendering from Footer in the component :", counter)
 
 
     return (
@@ -44,3 +47,5 @@ const Counter = () => {
 }
 
 export default Counter;
+
+console.log("Rendering from Footer 👨‍💻")
