@@ -13,13 +13,14 @@ import LearnUseEffect from "./components/use-effect/LearnUseEffect";
 // import RefCounter from "./components/ref-counter/RefCounter";
 // import RefInput from "./components/ref-input/RefInput";
 // import RefBtn from "./components/ref-button/RefBtn";
+import EffectApp from "./components/use-effect/EffectApp";
 
 
 
 const App = () => {
   return (
     <div className="bg-slate-100">
-      <LearnUseEffect />
+      <EffectApp />
     </div>
   )
 }
