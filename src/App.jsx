@@ -3,7 +3,8 @@
 // import MealList from "./components/meal/MealList";
 // import PersonList from "./components/persons/PersonList";
 // import ToolBar from "./components/toolbar/ToolBar";
-import Counter from "./components/counter/Counter";
+// import Counter from "./components/counter/Counter";
+import LearnUseEffect from "./components/use-effect/LearnUseEffect";
 // import Color from "./components/color/Color";
 // import Form from "./components/form/Form";
 // import Accordian from "./components/accordian/Accordian";
@@ -18,7 +19,7 @@ import Counter from "./components/counter/Counter";
 const App = () => {
   return (
     <div className="bg-slate-100">
-      <Counter />
+      <LearnUseEffect />
     </div>
   )
 }
