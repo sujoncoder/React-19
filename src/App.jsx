@@ -4,7 +4,6 @@
 // import PersonList from "./components/persons/PersonList";
 // import ToolBar from "./components/toolbar/ToolBar";
 // import Counter from "./components/counter/Counter";
-import ChatApp from "./components/use-effect/ChatApp";
 // import LearnUseEffect from "./components/use-effect/LearnUseEffect";
 // import Color from "./components/color/Color";
 // import Form from "./components/form/Form";
@@ -15,6 +14,7 @@ import ChatApp from "./components/use-effect/ChatApp";
 // import RefInput from "./components/ref-input/RefInput";
 // import RefBtn from "./components/ref-button/RefBtn";
 // import EffectApp from "./components/use-effect/EffectApp";
+import { ChatApp } from "./components/use-effect/ChatApp";
 
 
 
