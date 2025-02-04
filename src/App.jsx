@@ -14,14 +14,15 @@
 // import RefInput from "./components/ref-input/RefInput";
 // import RefBtn from "./components/ref-button/RefBtn";
 // import EffectApp from "./components/use-effect/EffectApp";
-import { ChatApp } from "./components/use-effect/ChatApp";
+// import { ChatApp } from "./components/use-effect/ChatApp";
+import FetchData from "./components/fetch-data/FetchData";
 
 
 
 const App = () => {
   return (
     <div className="bg-slate-100">
-      <ChatApp />
+      <FetchData />
     </div>
   )
 }
